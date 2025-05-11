@@ -1,8 +1,9 @@
-# sneaky-swipe-detector
+# Fraud Service Project
 Can You Spot the Fraud? This project uncover hidden patterns in financial data, build a model to identify sneaky swipes.
 
-The project is structure as shown below:
+This README outlines the directory structure of the Fraud Service project, providing a guide to where different components of the codebase reside.
 
+```bash
 fraud_service_project/
 ├── src/
 │   ├── fraud_service/       # Or fraud_detection/
@@ -79,7 +80,26 @@ fraud_service_project/
 ├── data/
 ├── models/                  # Trained models (separate from code)
 ├── notebooks/               # Exploration and experimentation
-├── config/
-├── requirements.txt
-├── setup.py
-└── ... (other project files like LICENSE, README, etc.)
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
+```
+
+**Explanation of Key Directories:**
+
+* **`src/fraud_service/`**: Contains the core Python code for the fraud detection service. This is where the main logic, models, feature engineering, and any API definitions reside.
+* **`src/tests/`**: Holds unit and integration tests to ensure the `fraud_service` package functions correctly.
+* **`scripts/`**: Contains executable scripts for various operational tasks, such as data handling and model training, that are typically run from the command line.
+* **`orchestration/`**: Manages the workflows and automation of different parts of the service (e.g., data pipelines, model retraining). Examples for Prefect and Airflow are included.
+* **`deployment/`**: Contains configurations and scripts necessary for deploying the fraud service to different environments (e.g., Docker, Kubernetes, cloud platforms).
+* **`monitoring/`**: Includes configurations and tools for monitoring the health, performance, and behavior of the deployed service.
+* **`experiments/`**: Stores information and scripts related to tracking and managing machine learning experiments.
+* **`data/`**: Used to store the datasets relevant to the project, separated into subdirectories as needed (e.g., `raw`, `processed`).
+* **`models/`**: Stores trained machine learning models, potentially organized by environment (e.g., `production`, `staging`).
+* **`notebooks/`**: Contains Jupyter notebooks used for data exploration, experimentation, and prototyping.
+* **`config/`**: Holds configuration files for different aspects of the service.
+* **`requirements.txt`**: Lists the Python packages required to run the project.
+* **`setup.py`**: Used for packaging the Python project for distribution.
+* **`LICENSE`**: Specifies the licensing for the project.
+* **`README.md`**: Provides a high-level overview of the project and instructions for getting started.
