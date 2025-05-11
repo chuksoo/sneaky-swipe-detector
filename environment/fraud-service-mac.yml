@@ -1,0 +1,35 @@
+name: fraud-service
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - mlflow
+  - ipython
+  - ipywidgets
+  - numpy
+  - pandas
+  - seaborn
+  - hyperopt
+  - xgboost
+  - lightgbm
+  - catboost
+  - jupyter
+  - matplotlib
+  - scikit-learn
+  - imbalanced-learn
+  - shap
+  - boto3
+  - fastparquet
+  - graphviz
+  - prefect
+  - tqdm
+  - requests
+  - joblib
+  - pyarrow
+  - psycopg
+  - psycopg2-binary
+  - evidently
+  - pylint
+  - flask
+  - ydata-profiling
+
