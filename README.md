@@ -80,10 +80,14 @@ fraud_service_project/
 ├── data/
 ├── models/                  # Trained models (separate from code)
 ├── notebooks/               # Exploration and experimentation
+├── config/
+├── reports/
+├── environment/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── setup.py
 ```
 
 **Explanation of Key Directories:**
